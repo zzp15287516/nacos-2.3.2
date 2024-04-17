@@ -1,0 +1,46 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2024-04-17T14:48:18+08:00
+
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 20
+
+Apache Licensed: 20
+Generated Documents: 0
+
+JavaDocs are generated, thus a license header is optional.
+Generated files do not require license headers.
+
+0 Unknown Licenses
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require any license headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc. will be marked N
+  AL    D:/work/project/nacos-2.3.2/distribution/bin/shutdown.cmd
+  AL    D:/work/project/nacos-2.3.2/distribution/bin/shutdown.sh
+  AL    D:/work/project/nacos-2.3.2/distribution/bin/startup.cmd
+  AL    D:/work/project/nacos-2.3.2/distribution/bin/startup.sh
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/1.4.0-ipv6_support-update.sql
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/application.properties
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/application.properties.example
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/cluster.conf.example
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/derby-schema.sql
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/mysql-schema.sql
+  AL    D:/work/project/nacos-2.3.2/distribution/conf/nacos-logback.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/LICENSE-BIN
+  AL    D:/work/project/nacos-2.3.2/distribution/NOTICE-BIN
+  AL    D:/work/project/nacos-2.3.2/distribution/pom.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/release-address.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/release-client.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/release-config.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/release-core.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/release-nacos.xml
+  AL    D:/work/project/nacos-2.3.2/distribution/release-naming.xml
+ 
+*****************************************************
