@@ -18,6 +18,8 @@ package com.alibaba.nacos.plugin.auth.impl.utils;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import java.util.regex.Pattern;
+
 /**
  * Password encoder tool.
  *
@@ -31,5 +33,10 @@ public class PasswordEncoderUtil {
     
     public static String encode(String raw) {
         return new BCryptPasswordEncoder().encode(raw);
+    }
+
+    public static Boolean simpleCheck(String raw) {
+        String reg = "^(?![a-zA-Z]+$)(?![A-Z0-9]+$)(?![A-Z\\W-~#?!@$%^*&]+$)(?![a-z0-9]+$)(?![a-z\\W-~#?!@$%^*&]+$)(?![0-9\\W-~#?!@$%^*&]+$)[a-zA-Z0-9\\W-~#?!@$%^*&]{8,}$";
+        return Pattern.compile(reg).matcher(raw).matches();
     }
 }

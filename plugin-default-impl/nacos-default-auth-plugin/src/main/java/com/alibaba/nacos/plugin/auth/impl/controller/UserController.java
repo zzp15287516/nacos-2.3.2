@@ -100,7 +100,9 @@ public class UserController {
     @Secured(resource = AuthConstants.CONSOLE_RESOURCE_NAME_PREFIX + "users", action = ActionTypes.WRITE)
     @PostMapping
     public Object createUser(@RequestParam String username, @RequestParam String password) {
-        
+        if (!PasswordEncoderUtil.simpleCheck(password)) {
+            throw new IllegalArgumentException("Password too simple!");
+        }
         User user = userDetailsService.getUserFromDatabase(username);
         if (user != null) {
             throw new IllegalArgumentException("user '" + username + "' already exist!");
@@ -146,6 +148,9 @@ public class UserController {
     @Secured(resource = AuthConstants.UPDATE_PASSWORD_ENTRY_POINT, action = ActionTypes.WRITE)
     public Object updateUser(@RequestParam String username, @RequestParam String newPassword,
             HttpServletResponse response, HttpServletRequest request) throws IOException {
+        if (!PasswordEncoderUtil.simpleCheck(newPassword)) {
+            throw new IllegalArgumentException("Password too simple!");
+        }
         // admin or same user
         try {
             if (!hasPermission(username, request)) {
